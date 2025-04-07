@@ -1,6 +1,8 @@
 # BackendEksamen2025
 # SkiLesson Planner API
 
+https://github.com/MickeJDengaard/BackendEksamen2025
+
 Et RESTful API-baseret backend-projekt bygget med Javalin og JPA (Hibernate), som gør det muligt at oprette, hente, opdatere og slette skiundervisningstimer og instruktører.
 
 ##  Projektbeskrivelse
