@@ -1,4 +1,4 @@
-package app.security.controllers;
+/*package app.security.controllers;
 
 import app.config.HibernateConfig;
 import app.security.daos.ISecurityDAO;
@@ -39,7 +39,7 @@ public class SecurityController implements ISecurityController {
 
     private SecurityController() { }
 
-    public static SecurityController getInstance() { // Singleton because we don't want multiple instances of the same class
+    public static SecurityController getInstance() {
         if (instance == null) {
             instance = new SecurityController();
         }
@@ -192,4 +192,4 @@ public class SecurityController implements ISecurityController {
     public void healthCheck(@NotNull Context ctx) {
         ctx.status(200).json("{\"msg\": \"API is up and running\"}");
     }
-}
+}*/

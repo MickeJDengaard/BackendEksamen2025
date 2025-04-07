@@ -1,4 +1,4 @@
-package app.security.daos;
+/*package app.security.daos;
 
 
 
@@ -7,7 +7,6 @@ import app.security.entities.Role;
 import app.security.entities.User;
 import app.security.exceptions.ApiException;
 import app.security.exceptions.ValidationException;
-import dk.bugelhartmann.UserDTO;
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -36,7 +35,7 @@ public class SecurityDAO implements ISecurityDAO {
             User user = em.find(User.class, username);
             if (user == null)
                 throw new EntityNotFoundException("No user found with username: " + username); //RuntimeException
-            user.getRoles().size(); // force roles to be fetched from db
+            user.getRoles().size();
             if (!user.verifyPassword(password))
                 throw new ValidationException("Wrong password");
             return new UserDTO(user.getUsername(), user.getRoles().stream().map(r -> r.getRoleName()).collect(Collectors.toSet()));
@@ -83,5 +82,5 @@ public class SecurityDAO implements ISecurityDAO {
             return user;
         }
     }
-}
+}*/
 

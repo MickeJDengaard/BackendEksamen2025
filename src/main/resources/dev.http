@@ -1,0 +1,66 @@
+### Hent alle ski-lektioner
+GET http://localhost:7070/api/ski-lessons
+Accept: application/json
+
+###
+
+### Hent en specifik ski-lektion
+GET http://localhost:7070/api/ski-lessons/9
+Accept: application/json
+
+###
+
+### Opret en ny ski-lektion (kræver ADMIN-token)
+POST http://localhost:7070/api/ski-lessons
+Content-Type: application/json
+
+{
+  "name": "Begynder-lektion",
+  "startTime": "2025-04-10T09:00:00",
+  "endTime": "2025-04-10T11:00:00",
+  "latitude": 46.8182,
+  "longitude": 8.2275,
+  "price": 450.0,
+  "level": "BEGINNER"
+}
+
+###
+
+### Opdater en ski-lektion (kræver ADMIN-token)
+PUT http://localhost:7070/api/ski-lessons/10
+Content-Type: application/json
+
+{
+  "name": "Advanceret",
+  "startTime": "2025-04-10T09:00:00",
+  "endTime": "2025-04-10T11:00:00",
+  "latitude": 46.8182,
+  "longitude": 8.2275,
+  "price": 500.0,
+  "level": "ADVANCED"
+}
+
+### Tilføj en eksisterende instruktør til en ski-lektion
+PUT http://localhost:7070/api/ski-lessons/10/instructors/7
+
+
+### Slet en ski-lektion (kræver ADMIN-token)
+DELETE http://localhost:7070/api/ski-lessons/10
+
+
+### Hent alle lektioner indenfor valgte sværhedsgrad
+GET http://localhost:7070/api/ski-lessons/filter?level=BEGINNER
+
+### Samlet lektions priser for hver instruktør
+GET http://localhost:7070/api/ski-lessons/instructor-overview
+
+### Total undervist tid pr. instruktør
+GET http://localhost:7070/api/ski-lessons/instructors/total-time
+
+### Hent instruktionstid for et bestemt level
+GET http://localhost:7070/api/ski-lessons/instruction-duration?level=BEGINNER
+
+
+
+
+

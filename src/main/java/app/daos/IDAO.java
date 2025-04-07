@@ -8,4 +8,5 @@ public interface IDAO<T> {
     T getById(int id);
     T update(T dto);
     boolean delete(int id);
+    boolean validatePrimaryKey(int id);
 }

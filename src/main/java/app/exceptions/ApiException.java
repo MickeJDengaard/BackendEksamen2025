@@ -1,6 +1,6 @@
 package app.exceptions;
 
-public class ApiException extends Exception{
+public class ApiException extends RuntimeException {
 
     private final int statusCode;
 
@@ -12,5 +12,4 @@ public class ApiException extends Exception{
     public int getStatusCode() {
         return statusCode;
     }
-
 }

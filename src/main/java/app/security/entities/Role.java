@@ -1,4 +1,4 @@
-package app.security.entities;
+/*package app.security.entities;
 
 import jakarta.persistence.*;
 import lombok.ToString;
@@ -8,10 +8,7 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Purpose: To handle security in the API
- *  Author: Thomas Hartmann
- */
+
 @Entity
 @Table(name = "roles")
 @NamedQueries(@NamedQuery(name = "Role.deleteAllRows", query = "DELETE from Role"))
@@ -47,4 +44,4 @@ public class Role implements Serializable {
     public String toString() {
         return "Role{" + "roleName='" + name + '\'' + '}';
     }
-}
+}*/
